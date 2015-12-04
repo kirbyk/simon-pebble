@@ -82,7 +82,6 @@ void keynote_init(void) {
   progress_bar_volume_icon = gbitmap_create_with_resource(RESOURCE_ID_IMAGE_PROGRESS_BAR_VOLUME_ICON);
 
   window = window_create();
-  window_set_status_bar_icon(window, status_bar_icon);
   window_set_window_handlers(window, (WindowHandlers) {
     .load = window_load,
     .unload = window_unload,

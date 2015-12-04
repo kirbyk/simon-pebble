@@ -89,7 +89,6 @@ void itunes_init(void) {
   dotted_status = gbitmap_create_with_resource(RESOURCE_ID_DOTTED_STATUS);
 
   window = window_create();
-  window_set_status_bar_icon(window, status_bar_icon);
   window_set_window_handlers(window, (WindowHandlers) {
     .load = window_load,
     .unload = window_unload,
